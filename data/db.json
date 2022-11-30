@@ -1,26 +1,25 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "name": "Leanne Graham",
-            "email": "Sincere@april.biz",
-            "info": "Proactive didactic contingency",
-            "complete": true
-        },
-        {
-            "id": 2,
-            "name": "Ervin Howell",
-            "email": "Shanna@melissa.tv",
-            "info": "Face to face bifurcated interface",
-            "complete": true
-
-        },
-        {
-            "id": 3,
-            "name": "Clementine Bauch",
-            "email": "Nathan@yesenia.net",
-            "info": "Multi-tiered zero tolerance productivity",
-            "complete": true
-        }
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "info": "Proactive didactic contingency",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "email": "Shanna@melissa.tv",
+      "info": "Face to face bifurcated interface",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "email": "Nathan@yesenia.net",
+      "info": "Multi-tiered zero tolerance productivity",
+      "complete": false
+    }
+  ]
 }
