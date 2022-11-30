@@ -2,20 +2,21 @@
   <div class="home">
     <div v-if="projects.length">
       <div v-for="project in projects">
-        <h1>{{project.name}}</h1>
-        <p>{{project.email}}</p>
-        <p>{{project.info}}</p>
+        <SingleProject :project="project"/>
+        
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import SingleProject from '../components/SingleProject.vue';
+
 
 
 export default {
   name: 'Home',
-  components: {},
+  components: { SingleProject },
   data(){
     return{
       projects: []
