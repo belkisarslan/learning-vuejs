@@ -4,7 +4,7 @@
       <div class="actions">
         <h1 @click="showDetails = !showDetails">{{ project.name }}</h1>
         <div class="icons">
-          <span class="material-symbols-outlined"> edit </span>
+          <router-link :to="{name: 'EditProject', params:{id:project.id}}" ><span class="material-symbols-outlined"> edit </span></router-link>
           <span @click="deleteProject" class="material-symbols-outlined"> delete </span>
           <span @click="toggleComplete" class="material-symbols-outlined tick"> done </span>
         </div>
