@@ -21,7 +21,17 @@
   },
   methods:{
     handleSubmit(){
-    console.log(this.name, this.email, this.info)
+    let project = {
+      name: this.name,
+      email: this.email,
+      info: this.info,
+      complete: false
+    }
+    fetch("http://localhost:3000/projects/",{
+      method: "POST",
+      headers:{'Content-Type': 'application/json'},
+      body: JSON.stringify(project)
+    }).then(()=>this.$router.push("/")).catch(err=>console.log(err))
   }
   }
  }
